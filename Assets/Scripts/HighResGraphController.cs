@@ -77,7 +77,6 @@ public class HighResGraphController : MonoBehaviour{
                 Vector3 newPos = current[e].position;
                 newPos.y = previous[ Mathf.FloorToInt((float)e/2) ].position.y;
                 current[e].position = newPos; 
-                Debug.Log(e);
             }
 
             for(int offset=1; offset<current.Count/16; ++offset){
@@ -85,15 +84,16 @@ public class HighResGraphController : MonoBehaviour{
                     Vector3 newPos = current[e].position;
                     newPos.y = (float)(current[e-1].position.y + current[e+1].position.y) / 2;
                     current[e].position = newPos; 
-                    Debug.Log(e);
                 }
             }
             
             // current[current.Count - 1].transform.position = current[current.Count - 2].transform.position * (float)3/5;
 
-            Debug.Log("");
-
         }
+    }
+    
+    public void WipeList(){
+        riserRef = new List<List<Transform>>();
     }
 
 }

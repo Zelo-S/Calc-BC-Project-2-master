@@ -3371,17 +3371,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 947130063}
-  risers:
+  risers4:
   - {fileID: 4406442380561071204}
   - {fileID: 727837531}
   - {fileID: 283952365}
   - {fileID: 1437117459}
-  startPositions: []
+  risers8:
+  - {fileID: 693139002}
+  - {fileID: 841239146}
+  - {fileID: 657915447}
+  - {fileID: 1736624866}
+  - {fileID: 830823747}
+  - {fileID: 1807734542}
+  - {fileID: 2094503035}
+  - {fileID: 1754777811}
+  risers16:
+  - {fileID: 541468279}
+  - {fileID: 2014691331}
+  - {fileID: 2110824519}
+  - {fileID: 912423008}
+  - {fileID: 35344900}
+  - {fileID: 1887348689}
+  - {fileID: 1371756380}
+  - {fileID: 737404864}
+  - {fileID: 1089887286}
+  - {fileID: 1450110531}
+  - {fileID: 1316394909}
+  - {fileID: 1891853733}
+  - {fileID: 1077597854}
+  - {fileID: 654831840}
+  - {fileID: 284549063}
+  - {fileID: 1817940574}
   spawnPoints:
   - {fileID: 1717794792}
   - {fileID: 1439818074}
   - {fileID: 280016230}
   - {fileID: 467624449}
+  highRes: {fileID: 2106715967}
 --- !u!95 &947130063 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6702651813248136064, guid: 83ea2f001349a4149ab0088df3baee6d, type: 3}
