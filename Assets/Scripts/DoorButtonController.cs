@@ -7,7 +7,11 @@ using TMPro;
 public class DoorButtonController: Menuable, IInteractable{
 
     public Action OnButtonClicked;
-    public Level1Problems problem;
+    
+    [SerializeField]
+    private List<Level1Problems> problems;
+    public Level1Problems chosenProblem;
+    
     public Canvas prompt;
 
     [SerializeField]
@@ -17,6 +21,8 @@ public class DoorButtonController: Menuable, IInteractable{
     [SerializeField]
     private TextMeshProUGUI result;
     
+    public static Action<Level1Problems> OnProblemChosen;
+    
     void Awake(){
         isProblemSolved = false;
         isPromptActive = false;
@@ -24,8 +30,15 @@ public class DoorButtonController: Menuable, IInteractable{
         result.gameObject.SetActive(false);
     }
     
+    void Start(){
+        int problemPos = UnityEngine.Random.Range(0, 3);
+        chosenProblem = problems[problemPos];
+        
+        OnProblemChosen?.Invoke(chosenProblem);
+    }
+    
     public void SubmitAnswer(string ans){
-        if(ans.Equals(problem.ans)) { 
+        if(ans.Equals(chosenProblem.ans)) { 
             isPromptActive = false; 
             Debug.Log("NICE!");
             isProblemSolved = true;
