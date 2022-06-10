@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11381afc08444314c83c2dac021dae53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  problem: {fileID: 0}
+  problems: []
   prompt: {fileID: 8386708996058173731}
   isProblemSolved: 0
   result: {fileID: 0}
@@ -1559,6 +1559,7 @@ GameObject:
   - component: {fileID: 7085887161242275041}
   - component: {fileID: 6219428889418901035}
   - component: {fileID: 2926909902213056314}
+  - component: {fileID: 8078959854652924008}
   m_Layer: 0
   m_Name: Prompt Image
   m_TagString: Untagged
@@ -1623,6 +1624,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8078959854652924008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404367582598537831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8d6f830a7c5c942bd639e4007b78d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5686546524136175346
 GameObject:
   m_ObjectHideFlags: 0

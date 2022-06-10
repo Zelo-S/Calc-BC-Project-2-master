@@ -8,8 +8,6 @@ public class DoorButtonController: Menuable, IInteractable{
 
     public Action OnButtonClicked;
     
-    [SerializeField]
-    private List<Level1Problems> problems;
     public Level1Problems chosenProblem;
     
     public Canvas prompt;
@@ -23,17 +21,11 @@ public class DoorButtonController: Menuable, IInteractable{
     
     public static Action<Level1Problems> OnProblemChosen;
     
-    void Awake(){
+    void Start(){
         isProblemSolved = false;
         isPromptActive = false;
         prompt.gameObject.SetActive(false);
         result.gameObject.SetActive(false);
-    }
-    
-    void Start(){
-        int problemPos = UnityEngine.Random.Range(0, 3);
-        chosenProblem = problems[problemPos];
-        
         OnProblemChosen?.Invoke(chosenProblem);
     }
     

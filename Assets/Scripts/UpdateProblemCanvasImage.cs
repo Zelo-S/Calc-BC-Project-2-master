@@ -7,13 +7,7 @@ public class UpdateProblemCanvasImage : MonoBehaviour{
     
     private Image imageUsed;
     
-    void Awake(){
-        DoorButtonController.OnProblemChosen += InitImage;
-        imageUsed = GetComponent<Image>();
-    }
-    
-    void InitImage(Level1Problems problem){
-        imageUsed.sprite = problem.prompt;
+    void Start(){
     }
 
 }

@@ -1507,7 +1507,7 @@ PrefabInstance:
     - target: {fileID: 2926909902213056314, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 079e117925a61ee42b9fa82293047bb3, type: 3}
+      objectReference: {fileID: 21300000, guid: 77a9080d3fa55fe47a68a1c4b59dac65, type: 3}
     - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: result
       value: 
@@ -1516,6 +1516,14 @@ PrefabInstance:
       propertyPath: problem
       value: 
       objectReference: {fileID: 11400000, guid: bb5af09417bd3f04cab996b6f8b1ba3c, type: 2}
+    - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
+      propertyPath: chosenProblem
+      value: 
+      objectReference: {fileID: 11400000, guid: 8640efa39f8efd043bf5f40833a87f25, type: 2}
+    - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
+      propertyPath: problems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4672986881764606114, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1958,7 +1966,7 @@ PrefabInstance:
     - target: {fileID: 2926909902213056314, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: dc3df831f46fe2e4ebfecfae29b23ed5, type: 3}
+      objectReference: {fileID: 21300000, guid: be8ff7fb6c53f784c82c2c66963ab569, type: 3}
     - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: result
       value: 
@@ -1967,6 +1975,14 @@ PrefabInstance:
       propertyPath: problem
       value: 
       objectReference: {fileID: 11400000, guid: 7a00531fce3ebf342bae064b8da342ea, type: 2}
+    - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
+      propertyPath: chosenProblem
+      value: 
+      objectReference: {fileID: 11400000, guid: 96abc2351fd2a8a44b0385f271de33d0, type: 2}
+    - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
+      propertyPath: problems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4672986881764606114, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2768,23 +2784,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1750944317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5404367582598537831, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
-  m_PrefabInstance: {fileID: 3068322545696417528}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1750944321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750944317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f8d6f830a7c5c942bd639e4007b78d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1811976163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3907,7 +3906,7 @@ PrefabInstance:
     - target: {fileID: 2926909902213056314, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6bb8fd8cdc3eb134084e537a9701d444, type: 3}
+      objectReference: {fileID: 21300000, guid: 6f2c0a42ef5a3e74ca8cb6285b8768a3, type: 3}
     - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: result
       value: 
@@ -3921,8 +3920,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3068322545696417530}
     - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
+      propertyPath: chosenProblem
+      value: 
+      objectReference: {fileID: 11400000, guid: 04538bcdb7c431f45adc444ae0ad23fc, type: 2}
+    - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: problems.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3797885398642595896, guid: f0100c8e3cf3b8c4492cedc3f23ee561, type: 3}
       propertyPath: problems.Array.data[0]
